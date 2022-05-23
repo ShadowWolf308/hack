@@ -78,9 +78,6 @@
 
 </section>
 
-    <p> hier zijn alle packs die nu beschrikbaar zijn</p>
-
-
 
 
     <footer>
@@ -169,8 +166,9 @@ function showhide() {
   }
 }
 </script>
-<section class="cart"> 
-        <div id="cartshow"><div id="first_member"></div></div> 
+<section class="cart" > 
+        <div style="display: none;" id="cartshow"><div id="first_member"></div>
+    <button>checkout</button></div> 
     </section>
 </body>
 

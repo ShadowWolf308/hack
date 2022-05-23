@@ -39,6 +39,7 @@ border:4px solid black;
 
 #felx {
     display: flex;
+    margin: 30px;
     justify-content: space-around;
 }
 #felx2 {
@@ -51,7 +52,7 @@ body{
 .icona{
     position: relative;
     top: -70px;
-    left: 1300px;
+    left: 1900px;
     border: solid 0px black;
     background-color: #00000000;
 }
