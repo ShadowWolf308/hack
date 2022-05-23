@@ -36,44 +36,55 @@
         <img src="./images/logo.png" class="logotje">
         <nav>
             <a href="shop.php">Webshop</a>
-            <a href="pack.php">Pack opening</a>
-            <a href="trade.php">Trading</a>
+            <?php if (isset($_SESSION['ingelogd']) && $_SESSION['ingelogd'] == true){
+                echo '<a href="pack.php" id="store">Pack opening</a>';
+                echo '<a href="trade.php" id="trade">Trading</a>';
+            }
+            ?>
         </nav>
     </header>
 <section id="felx">
     <section class="box1">
+    </section>
+
+    <section class="box2">
+    </section>
+
+    <section class="box3">
+    </section>
+</section>
+<section id="felx2">
+    <section class="tez">
     <p>pokemon pack 1</p>
     <p>€10,-</p>
     <button>Add</button>
     </section>
 
-    <section class="box2">
+    <section class="tez">
     <p>pokemon pack 2</p>
     <p>€15,99</p>
     <button>Add</button>
     </section>
 
-    <section class="box3">
+    <section class="tez">
     <p>pokemon pack 3</p>
     <p>€15,99</p>
     <button>Add</button>
     </section>
-    <section class="cart">
-    <button ><i class="fa-solid fa-basket-shopping"></i></button>
-    </section>
 
 </section>
-
-
-
+<section class="cart">
+    <button ><i class="fa-solid fa-basket-shopping"></i></button>
+    </section>
+    <section class="cart">
+    <p> hier zijn alle packs die nu beschrikbaar zijn</p>
+    </section> 
 
 
 
 
 
     <footer>
-        <!--footer data-->
-
     </footer>
     <!--linking a .js file-->
     <script src="" type="text/javascript"></script>
