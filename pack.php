@@ -32,7 +32,7 @@
     <!--body data-->
     <header>
         <!--header data-->
-        <img href="./images/logo.png">
+        <img src="./images/Logo.png">
         <nav>
             <a href="shop.php">Webshop</a>
             <a href="pack.php">Pack opening</a>

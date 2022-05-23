@@ -1,8 +1,8 @@
 <?php
 session_start();
-if(!$_SESSION['ingelogd']) {
-    header('location: home.php');
-}
+// if(!$_SESSION['ingelogd']) {
+//     header('location: home.php');
+// }
 ?>
 <!doctype html>
 <html>
@@ -38,13 +38,14 @@ if(!$_SESSION['ingelogd']) {
     <!--body data-->
     <header>
         <!--header data-->
-        <img href="./images/logo.png">
+        <img src="./images/Logo.png">
         <nav>
             <a href="shop.php">Webshop</a>
             <a href="pack.php">Pack opening</a>
             <a href="trade.php">Trading</a>
         </nav>
     </header>
+    <p>welkom bij poke-shop, de online Pokémon shop van Nederland. hier kun alle soorten Pokémon kaarten vinden, van de populaire Pikachu tot de zeldzame Charizard. maar dat is niet alles, je kan zelfs pokemon packs openen en kijken hoeveel geluk je hebt, alles is mogelijk. en dan heb je nog het kaarten ruilen. hier kon je alle kaarten ruilen die je niet wil met andere mensen of met de robot die je nieuwe kaarten geeft met gelijke waarde</p>
     <footer>
         <!--footer data-->
 
