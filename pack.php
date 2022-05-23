@@ -67,34 +67,34 @@ session_start();
     <section id="box2">
         <section>
             <article>
-                <span id="pokeName1">bulbasaur</span> <br>
-                <span id="pokeType1">grass & poison</span> <br>
+                <span id="pokeName1"></span> <br>
+                <span id="pokeType1"></span> <br>
             </article>
             <article>
-                <span id="pokeName2">bulbasaur</span> <br>
-                <span id="pokeType2">grass & poison</span> <br>
+                <span id="pokeName2"></span> <br>
+                <span id="pokeType2"></span> <br>
             </article>
             <article>
-                <span id="pokeName3">bulbasaur</span> <br>
-                <span id="pokeType3">grass & poison</span> <br>
+                <span id="pokeName3"></span> <br>
+                <span id="pokeType3"></span> <br>
             </article>
             <article>
-                <span id="pokeName4">bulbasaur</span> <br>
-                <span id="pokeType4">grass & poison</span> <br>
+                <span id="pokeName4"></span> <br>
+                <span id="pokeType4"></span> <br>
             </article>
         </section>
         <section>
             <article>
-                <span id="pokeName5">bulbasaur</span> <br>
-                <span id="pokeType5">grass & poison</span> <br>
+                <span id="pokeName5"></span> <br>
+                <span id="pokeType5"></span> <br>
             </article>
             <article>
-                <span id="pokeName6">bulbasaur</span> <br>
-                <span id="pokeType6">grass & poison</span> <br>
+                <span id="pokeName6"></span> <br>
+                <span id="pokeType6"></span> <br>
             </article>
             <article>
-                <span id="pokeName7">bulbasaur</span> <br>
-                <span id="pokeType7">grass & poison</span> <br>
+                <span id="pokeName7"></span> <br>
+                <span id="pokeType7"></span> <br>
             </article>
         </section>
     </section>
