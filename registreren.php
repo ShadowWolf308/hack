@@ -1,3 +1,21 @@
+<?php
+    $error = "";
+    if (isset($_POST['submit'])) {
+        if (!empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST['email'])) {
+            require('dbconnect.php');
+            $sql = "INSERT INTO gebruikers (username,password,email) VALUES ('".trim($_POST['username'])."','".trim($_POST['password'])."','".trim($_POST['email'])."')";
+            if ($conn->query($sql) === false) {
+                die("Error: " . $sql . "<br>" . $conn->error);
+            }
+            session_start();
+            $_SESSION['ingelogd'] = true;
+            $_SESSION['user'] = $_POST['username'];
+            header('location: ingelogd.php');
+        } else {
+            $error = "vul de velden in!";
+        }
+    }
+?>
 <!doctype html>
 <html>
 
@@ -38,6 +56,7 @@
         </nav>
     </header>
     <form method="post">
+        <?php echo $error ?>
         <input type="text" name="username" id="user" required placeholder="vul hier je gebruikersnaam">
         <input type="email" name="email" id="mail" required placeholder="vul hier je e-mail in">
         <input type="password" name="password" id="pass" required placeholder="vul hier je wachtwoord in">
