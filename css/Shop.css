@@ -48,3 +48,18 @@ border:4px solid black;
 body{
     background-color: darkblue;
 }
+.icona{
+    position: relative;
+    top: -70px;
+    left: 1300px;
+    border: solid 0px black;
+    background-color: #00000000;
+}
+#incona1 {
+    width: 100px;
+}
+.cart {
+    position: absolute;
+    top: 100px;
+    right: 0;
+}

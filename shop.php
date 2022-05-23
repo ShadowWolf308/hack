@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
     <!--meta data-->
     <!--usable characters for the website-->
     <meta charset="utf-8">
@@ -27,8 +28,7 @@
     <!--linking a .css page-->
     <link rel="stylesheet" type="text/css" href="./css/shop.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-
-    <script src="https://kit.fontawesome.com/63f832f2f2.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.js"></script>
 </head>
 
 <body>
@@ -39,12 +39,14 @@
         <nav>
             <a href="shop.php">Webshop</a>
             <?php if (isset($_SESSION['ingelogd']) && $_SESSION['ingelogd'] == true){
-                echo '<a href="pack.php" id="store">Pack opening</a>';
-                echo '<a href="trade.php" id="trade">Trading</a>';
+                echo '<a href="pack.php">Pack opening</a>';
+                echo '<a href="trade.php">Trading</a>';
             }
             ?>
         </nav>
+    <button class="icona" onclick="showhide()"><img src="./images/CART.png" id="incona1" alt=""></button>
     </header>
+
 <section id="felx">
     <section class="box1">
     </section>
@@ -59,28 +61,24 @@
     <section class="tez">
     <p>pokemon pack 1</p>
     <p>€10,-</p>
-    <button>Add</button>
+    <button id="btn_add1" onclick="">Add</button>
     </section>
 
     <section class="tez">
     <p>pokemon pack 2</p>
     <p>€15,99</p>
-    <button>Add</button>
+    <button id="btn_add2" onclick="">Add</button>
     </section>
 
     <section class="tez">
     <p>pokemon pack 3</p>
     <p>€15,99</p>
-    <button>Add</button>
+    <button id="btn_add" onclick="">Add</button>
     </section>
 
 </section>
-<section class="cart">
-    <button ><i class="fa-solid fa-basket-shopping"></i></button>
-    </section>
-    <section class="cart">
+
     <p> hier zijn alle packs die nu beschrikbaar zijn</p>
-    </section> 
 
 
 
@@ -97,6 +95,83 @@
     </footer>
     <!--linking a .js file-->
     <script src="" type="text/javascript"></script>
+    <!-- pack 3 -->
+    <script>var i = 1;  // declare global this variable
+
+function deletePool(obj) { // declare global this function and use the this obj passed
+  obj.parentNode.remove(obj);
+  i--;
+}
+
+$(function () {
+  $("#btn_add").on("click",addAnotherPool);
+
+  function addAnotherPool() {
+    if (i < 11) {
+      var html = '<div><input name="srv[]" id="srv_'+i+'" value="pokemon pack 3" type="text" disabled><button id="btn_del" name="pool_btn_add" onclick="javascript:deletePool(this)">Verwijder</button></div>';
+      $("#first_member").append(html);
+      i++;
+    }
+    return false;
+  }
+});</script>
+    <!-- pack 2-->
+    <script>var i = 1;  // declare global this variable
+
+function deletePool(obj) { // declare global this function and use the this obj passed
+  obj.parentNode.remove(obj);
+  i--;
+}
+
+$(function () {
+  $("#btn_add2").on("click",addAnotherPool);
+
+  function addAnotherPool() {
+    if (i < 11) {
+      var html = '<div><input name="srv[]" id="srv_'+i+'" value="pokemon pack 2" type="text" disabled><button id="btn_del" name="pool_btn_add" onclick="javascript:deletePool(this)">Verwijder</button></div>';
+      $("#first_member").append(html);
+      i++;
+    }
+    return false;
+  }
+});</script>
+    <!-- pack 1-->
+
+    <script>var i = 1;  // declare global this variable
+
+function deletePool(obj) { // declare global this function and use the this obj passed
+  obj.parentNode.remove(obj);
+  i--;
+}
+
+$(function () {
+  $("#btn_add1").on("click",addAnotherPool);
+
+  function addAnotherPool() {
+    if (i < 11) {
+      var html = '<div><input name="srv[]" id="srv_'+i+'" value="pokemon pack 1" type="text" disabled><button id="btn_del" name="pool_btn_add" onclick="javascript:deletePool(this)">Verwijder</button></div>';
+      $("#first_member").append(html);
+      i++;
+    }
+    return false;
+  }
+});</script>
+
+
+
+<script>
+function showhide() {
+  var x = document.getElementById("cartshow");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<section class="cart"> 
+        <div id="cartshow"><div id="first_member"></div></div> 
+    </section>
 </body>
 
 </html>
