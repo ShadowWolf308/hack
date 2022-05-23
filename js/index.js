@@ -1,0 +1,7 @@
+var common = ["Caterpie", "Metapod", "Butterfree", "Weedle", "Kakuna", "Beedrill", "Pidgey", "Pidgeotto", "Pidgeot", "Rattata", "Raticate", "Spearow", "Fearow", "Ekans", "Arbok", "Nidoran", "Nidorina", "Nidoqueen", "Nidoran", "Nidorino", "Nidoking", "Paras", "Parasect", "Diglett", "Dugtrio", "Tentacool", "Tentacruel", "Geodude", "Graveler", "Golem", "Gastly", "Haunter", "Gengar", "Voltorb"];
+var uncommon = ["Sandslash", "Oddish", "Gloom", "Vileplume", "Meowth", "Persian", "Poliwag", "Poliwhirl", "Poliwrath", "Bellsprout", "Weepinbell", "Victreebel", "Krabby", "Kingler"];
+var rare = ["Cleffa", "Clefairy", "Clefable", "Venonat", "Venomoth", "Mankey", "Primeape", "Magnemite", "Magneton", "Grimer", "Muk", "Shellder", "Cloyster", "Drowzee", "Hypno"];
+var veryRare = ["Pikachu", "Raichu", "Vulpix", "Ninetales", "Jigglypuff", "Wigglytuff", "Golbat", "Psyduck", "Golduck", "Growlithe", "Arcanine", "Abra", "Kadabra", "Alakazam", "Ponyta", "Rapidash", "Slowpoke", "Slowbro", "Doduo", "Dotrio", "Seel", "Dewgong"];
+var extremelyRare = ["Bulbasaur", "Ivysaur", "Venusaur", "Charmander", "Charmeleon", "Charizard", "Squirtle", "Wartortle", "Blastoise", "Machoke", "Machamp", "Farfetch'd", "Onix"];
+var legendary = [""];
+var event = [""]; 
