@@ -38,11 +38,13 @@ border:4px solid black;
 }
 
 #felx {
+    color: white;
     display: flex;
     margin: 30px;
     justify-content: space-around;
 }
 #felx2 {
+    color: white;
     display: flex;
     justify-content: space-around;
 }

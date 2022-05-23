@@ -1,0 +1,42 @@
+.logotje{
+    width: 70px;
+}
+
+
+
+footer{
+    position: relative;
+    top: 734px;
+}
+
+#pass{
+    position: absolute;
+    left: 810px;
+top: 700px;
+
+}
+#mail{
+    position: absolute;
+    left: 810px;
+    top: 600px;
+}
+#submit{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 810px;
+    top: 800px;
+}
+#user{
+    position: absolute;
+    left: 810px;
+    top: 500px;
+
+}
+.inloggen{
+    position: absolute;
+    top: 100px;
+    right: 860px;
+    font-size: 120px;
+    color: white;
+}

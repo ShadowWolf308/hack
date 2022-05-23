@@ -50,16 +50,23 @@
     <title>pack opening</title>
 
     <!--linking a .css page-->
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="./css/inlog.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
 </head>
 
 <body>
     <!--body data-->
     <header>
         <!--header data-->
-        <img src="./images/Logo.png">
+        <img src="./images/logo.png" class="logotje">
         <nav>
             <a href="shop.php">Webshop</a>
+            <?php if (isset($_SESSION['ingelogd']) && $_SESSION['ingelogd'] == true){
+                echo '<a href="pack.php">Pack opening</a>';
+                echo '<a href="trade.php">Trading</a>';
+            }
+            ?>
         </nav>
     </header>
     <form method="post">
@@ -70,10 +77,18 @@
     </form>
     <footer>
         <!--footer data-->
-
+        <img src="./images/logo.png" id="foot-img">
+        <p id="copy"><b>COPYRIGHT POKESHOP 2022</b></p>
+        <article class="icons">
+        <img src="./images/Laag 4.png">
+        <img src="./images/Laag 3.png">
+        <img src="./images/Laag 2.png">
+        </artcile>
     </footer>
     <!--linking a .js file-->
-    <script src="" type="text/javascript"></script>
+    <script src="" type="text/javascript"></script>    
+    <p class="inloggen">Inloggen</p>
+
 </body>
 
 </html>

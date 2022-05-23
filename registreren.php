@@ -43,14 +43,15 @@
     <title>pack opening</title>
 
     <!--linking a .css page-->
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="./css/register.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
     <!--body data-->
     <header>
         <!--header data-->
-        <img src="./images/Logo.png">
+        <img src="./images/logo.png" class="logotje">
         <nav>
             <a href="shop.php">Webshop</a>
         </nav>
@@ -62,12 +63,19 @@
         <input type="password" name="password" id="pass" required placeholder="vul hier je wachtwoord in">
         <input type="submit" name="submit" id="submit">
         </form>
-    <footer>
+        <footer>
         <!--footer data-->
-
+        <img src="./images/logo.png" id="foot-img">
+        <p id="copy"><b>COPYRIGHT POKESHOP 2022</b></p>
+        <article class="icons">
+        <img src="./images/Laag 4.png">
+        <img src="./images/Laag 3.png">
+        <img src="./images/Laag 2.png">
+        </artcile>
     </footer>
     <!--linking a .js file-->
-    <script src="" type="text/javascript"></script>
+    <script src="" type="text/javascript"></script>    
+    <p class="inloggen">Registreren</p>
 </body>
 
 </html>
