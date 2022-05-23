@@ -1,0 +1,136 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: lightblue;
+}
+body{
+    background-color: darkblue;
+}
+header{
+    display: grid;
+    grid-template-columns: 10vw 140vw;
+    background-color: yellow;
+    height: 100px;
+}
+#logo{
+    width: 70%;
+    display: grid;
+}
+.nav{
+    display: grid;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+nav{
+    display: grid;
+    grid-template-columns: 10vw 15vw 10vw;
+}
+#tradingsystem{
+    background-color: white;
+    width: 50%;
+    margin-left: 0px;
+}
+#kaarten{
+    width: 50%;
+}
+#cards{
+    text-align: center;
+}
+
+#text1{
+    background-color: white;
+    margin-left: 0px;
+    display: grid;
+    width: 50%;
+    grid-template-columns: 18vw 5vw;
+    border-right: 2px solid black;
+}
+#add{
+    background-color: white;
+    border: 2px solid black;
+    color: rgb(216, 216, 8);
+    width: 130%;
+    border-radius: 10%;
+    text-align: center;
+    font-size: 20px;
+}
+#trade{
+    background-color: white;
+    border: 2px solid black;
+    color: rgb(216, 216, 8);
+    width: 50%;
+    border-radius: 10%;
+    text-align: center;
+    font-size: 20px;
+}
+#add:hover{
+    color: lightblue;
+}
+
+#jouw-kaarten{
+    font-size: 30px;
+    color: white;
+    display: grid;
+    grid-template-columns: 20vw 2vw;
+    margin-top: 30px;
+}
+.block2{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    margin-left: 0px;
+}
+#friend{
+    display: grid;
+    grid-template-columns: repeat(2, 20vw);
+}
+.block{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    margin-left: 0px;
+}
+.art1{
+    font-size: 30px;
+    color: white;
+}
+
+
+footer{
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-areas: "logo . . text1 text1 text1 text1 . icons icons";
+   margin-top: 5.9%;
+}
+#foot-img{
+    width: 40%;
+    grid-area: logo;
+}
+
+#copy{
+    font-size: 40px;
+    grid-area: text1;
+    color: white;
+}
+
+.icons{
+    grid-area: icons;
+}
+.inlog{
+    background-color: white;
+    border: 2px solid black;
+    color: rgb(216, 216, 8);
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+}
