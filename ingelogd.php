@@ -45,10 +45,28 @@ if(!$_SESSION['ingelogd']) {
             <a href="trade.php">Trading</a>
         </nav>
     </header>
-    <p>welkom bij poke-shop, de online Pokémon shop van Nederland. hier kun alle soorten Pokémon kaarten vinden, van de populaire Pikachu tot de zeldzame Charizard. maar dat is niet alles, je kan zelfs pokemon packs openen en kijken hoeveel geluk je hebt, alles is mogelijk. en dan heb je nog het kaarten ruilen. hier kon je alle kaarten ruilen die je niet wil met andere mensen of met de robot die je nieuwe kaarten geeft met gelijke waarde</p>
+    <section id="sect">
+        <article id="intro">
+            <p>welkom bij poke-shop</br>
+            de online Pokémon shop van Nederland. hier kun alle soorten 
+        Pokémon kaarten vinden, van de populaire Pikachu tot de zeldzame Charizard.</br> 
+        aar dat is niet alles, je kan zelfs pokemon packs openen en kijken hoeveel geluk je hebt,
+          alles is mogelijk. en dan heb je nog het kaarten ruilen. hier kon je alle kaarten
+           ruilen die je niet wil met andere mensen of met de robot die je nieuwe kaarten
+            geeft met gelijke waarde</br>
+        </article>
+        <img src="./images/logo.png" width="" id="img">
+    </section>
+
     <footer>
         <!--footer data-->
-
+        <img src="./images/logo.png" id="foot-img">
+        <p id="copy"><b>COPYRIGHT POKESHOP 2022</b></p>
+        <article class="icons">
+        <img src="./images/Laag 4.png">
+        <img src="./images/Laag 3.png">
+        <img src="./images/Laag 2.png">
+        </artcile>
     </footer>
     <!--linking a .js file-->
     <script src="" type="text/javascript"></script>
