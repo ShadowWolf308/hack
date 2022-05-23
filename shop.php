@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--website description-->
-    <meta name="description" content="">
+    <meta name="description" content="content=content+content=contentcontent-content">
 
     <!--author data-->
     <meta name="author" content="Levy van der Valk, Socialboosts.nl">
@@ -26,6 +26,8 @@
 
     <!--linking a .css page-->
     <link rel="stylesheet" type="text/css" href="./css/shop.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
     <script src="https://kit.fontawesome.com/63f832f2f2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -36,44 +38,62 @@
         <img src="./images/logo.png" class="logotje">
         <nav>
             <a href="shop.php">Webshop</a>
-            <a href="pack.php">Pack opening</a>
-            <a href="trade.php">Trading</a>
+            <?php if (isset($_SESSION['ingelogd']) && $_SESSION['ingelogd'] == true){
+                echo '<a href="pack.php" id="store">Pack opening</a>';
+                echo '<a href="trade.php" id="trade">Trading</a>';
+            }
+            ?>
         </nav>
     </header>
 <section id="felx">
     <section class="box1">
+    </section>
+
+    <section class="box2">
+    </section>
+
+    <section class="box3">
+    </section>
+</section>
+<section id="felx2">
+    <section class="tez">
     <p>pokemon pack 1</p>
     <p>€10,-</p>
     <button>Add</button>
     </section>
 
-    <section class="box2">
+    <section class="tez">
     <p>pokemon pack 2</p>
     <p>€15,99</p>
     <button>Add</button>
     </section>
 
-    <section class="box3">
+    <section class="tez">
     <p>pokemon pack 3</p>
     <p>€15,99</p>
     <button>Add</button>
     </section>
-    <section class="cart">
-    <button ><i class="fa-solid fa-basket-shopping"></i></button>
-    </section>
 
 </section>
-
-
-
-
+<section class="cart">
+    <button ><i class="fa-solid fa-basket-shopping"></i></button>
+    </section>
+    <section class="cart">
+    <p> hier zijn alle packs die nu beschrikbaar zijn</p>
+    </section> 
 
 
 
 
     <footer>
         <!--footer data-->
-
+        <img src="./images/logo.png" id="foot-img">
+        <p id="copy"><b>COPYRIGHT POKESHOP 2022</b></p>
+        <article class="icons">
+        <img src="./images/Laag 4.png">
+        <img src="./images/Laag 3.png">
+        <img src="./images/Laag 2.png">
+        </artcile>
     </footer>
     <!--linking a .js file-->
     <script src="" type="text/javascript"></script>

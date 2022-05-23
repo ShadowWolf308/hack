@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!$_SESSION['ingelogd']) {
+    header('location: home.php');
+}
+?>
 <!doctype html>
 <html>
 
@@ -25,23 +31,34 @@
     <title>pack opening</title>
 
     <!--linking a .css page-->
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/pack.css">
 </head>
 
 <body>
     <!--body data-->
     <header>
         <!--header data-->
-        <img src="./images/Logo.png">
-        <nav>
+        <img src="./images/Logo.png" id="logo">
+        <nav id="nav">
             <a href="shop.php">Webshop</a>
             <a href="pack.php">Pack opening</a>
             <a href="trade.php">Trading</a>
         </nav>
     </header>
+    <p>jou packs</p>
+    <section id="pack1">
+
+    </section>
     <footer>
         <!--footer data-->
-
+        <img src="./images/logo.png" id="foot-img">
+        <p id="copy"><b>COPYRIGHT POKESHOP 2022</b></p>
+        <article class="icons">
+        <img src="./images/Laag 4.png">
+        <img src="./images/Laag 3.png">
+        <img src="./images/Laag 2.png">
+        </artcile>
     </footer>
     <!--linking a .js file-->
     <script src="" type="text/javascript"></script>

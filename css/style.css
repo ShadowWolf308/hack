@@ -1,0 +1,89 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: lightblue;
+}
+body{
+    background-color: darkblue;
+}
+header{
+    display: grid;
+    grid-template-columns: 10vw 160vw;
+    background-color: yellow;
+    height: 100px;
+}
+#logo{
+    width: 70%;
+    display: grid;
+}
+#nav{
+    display: grid-inline;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+#sect{
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-areas: "intro img";
+}
+
+#intro{
+    width: 25%;
+    margin-left: 20%;
+    margin-top: 140px;
+    font-size: 30px;
+    color: white;
+    display: grid;
+    grid-area: intro;
+}
+
+#inlog{
+    display: grid;
+    grid-template-columns: 10vw 15vw;
+}
+
+#img{
+    width: 60%;
+    display: grid;
+    grid-area: img;
+}
+
+footer{
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-areas: "logo . . text1 text1 text1 text1 . icons icons";
+   margin-top: 5.9%;
+}
+#foot-img{
+    width: 40%;
+    grid-area: logo;
+}
+
+#copy{
+    font-size: 40px;
+    grid-area: text1;
+    color: white;
+}
+
+.icons{
+    grid-area: icons;
+}
+
+.inlog{
+    background-color: white;
+    border: 2px solid black;
+    color: rgb(216, 216, 8);
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+}
