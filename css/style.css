@@ -1,4 +1,11 @@
-*{
+@font-face {
+    font-family: "poke";
+    src: url("../font/Pokemon\ Solid.ttf") format("truetype"),
+    url("../font/pokemon_solid-webfont.woff") format("woff"),
+    url("../font/pokemon_solid-webfont.woff2") format("woff2");
+}
+*{ 
+    font-family: "poke";
     margin: auto;
     padding: auto;
 }
@@ -14,7 +21,7 @@ body{
 }
 header{
     display: grid;
-    grid-template-columns: 10vw 160vw;
+    grid-template-columns: 10vw 150vw;
     background-color: yellow;
     height: 100px;
 }
@@ -27,7 +34,7 @@ header{
     background-color: yellow;
     border: 2px solid black;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #sect{

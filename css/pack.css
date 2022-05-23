@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "poke";
+    src: url("../font/Pokemon\ Solid.ttf") format("truetype"),
+    url("../font/pokemon_solid-webfont.woff") format("woff"),
+    url("../font/pokemon_solid-webfont.woff2") format("woff2");
+}
+* {
+    font-family: "poke";
+}
+#box {
+    display: flex;
+    width: 45vw;
+    float: left;
+}
+.packimg {
+    width: 150px;
+}
+#box2 {
+    display: flex;
+    width: 45vw;
+    height: 60vh;
+    float: right;
+    background-color: #0000ff44;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+}
+article {
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+span {
+    color: white;
+}
