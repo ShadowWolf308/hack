@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--website description-->
-    <meta name="description" content="">
+    <meta name="description" content="content=content+content=contentcontent-content">
 
     <!--author data-->
     <meta name="author" content="Levy van der Valk, Socialboosts.nl">
@@ -26,6 +26,8 @@
 
     <!--linking a .css page-->
     <link rel="stylesheet" type="text/css" href="./css/shop.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
     <script src="https://kit.fontawesome.com/63f832f2f2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -83,8 +85,15 @@
 
 
 
-
     <footer>
+        <!--footer data-->
+        <img src="./images/logo.png" id="foot-img">
+        <p id="copy"><b>COPYRIGHT POKESHOP 2022</b></p>
+        <article class="icons">
+        <img src="./images/Laag 4.png">
+        <img src="./images/Laag 3.png">
+        <img src="./images/Laag 2.png">
+        </artcile>
     </footer>
     <!--linking a .js file-->
     <script src="" type="text/javascript"></script>
