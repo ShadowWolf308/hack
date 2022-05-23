@@ -31,14 +31,14 @@ if(!$_SESSION['ingelogd']) {
     <title>ingelogd</title>
 
     <!--linking a .css page-->
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="./css/ingelogt.css">
 </head>
 
 <body>
     <!--body data-->
     <header>
         <!--header data-->
-        <img src="./images/Logo.png">
+        <img src="./images/logo.png" class="logotje">
         <nav>
             <a href="shop.php">Webshop</a>
             <a href="pack.php">Pack opening</a>
