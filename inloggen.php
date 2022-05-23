@@ -22,7 +22,7 @@
     <meta name="keywords" content="">
 
     <!--website title in tab-->
-    <title>home</title>
+    <title>pack opening</title>
 
     <!--linking a .css page-->
     <link rel="stylesheet" type="text/css" href="">
@@ -37,8 +37,11 @@
             <a href="shop.php">Webshop</a>
         </nav>
     </header>
-    <a href="inloggen.php">inloggen</a>
-    <a href="registreren.php">registreren</a>
+    <form method="post">
+        <input type="text" name="username" id="user" required placeholder="vul hier je gebruikersnaam">
+        <input type="password" name="password" id="pass" required placeholder="vul hier je wachtwoord in">
+        <input type="submit" name="submit" id="submit">
+    </form>
     <footer>
         <!--footer data-->
 
