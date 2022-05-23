@@ -1,8 +1,8 @@
 <?php
 session_start();
-if(!$_SESSION['ingelogd']) {
-    header('location: home.php');
-}
+// if(!$_SESSION['ingelogd']) {
+//     header('location: home.php');
+// }
 ?>
 <!doctype html>
 <html>
